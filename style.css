@@ -1,0 +1,379 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{  
+  font-family: 'Roboto Condensed', sans-serif;  
+  color: #2a2a2a;
+}
+
+#wrapper {
+    position: relative;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+#header-img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+#nav-bar ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: grey;
+  font-size: 1.3em;
+  padding-right: 20px;
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#section-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+    margin-top: 130px;
+    background-color: #4b452d;
+    background-image: url("https://images.thenorthface.com/is/image/TheNorthFaceBrand/f19-mountain-jkt-hero-blue?fmt=png-alpha&wid=700");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: arial, serif;  
+}
+
+#section-hero-content h1{
+  font-size: 3em;  
+  padding-bottom: 15px;
+}
+
+#section-hero-content p{
+  font-size: 1.3em;
+  padding-bottom: 20px;
+}
+
+#section-hero-content{
+  color: #fff;
+}
+.link-section-hero{
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #3a3a38;
+  margin: 10px;
+  background-color: #cccccc;
+  text-decoration: none;
+  padding: 0.65em 1.5em 0.61em; 
+  border: 1px solid transparent;
+  border-radius: 2px;
+  transition: background-color 0.25s ease-out,color 0.25s ease-out;
+  line-height: 1;
+  cursor: pointer;    
+}
+
+.link-section-hero:hover{  
+  color: #d1d0ca;
+  background-color: #3a3a38;
+  border: 1px solid #d1d0ca;  
+}
+
+.subtitle{
+  font-weight: normal;
+  font-size: 1.6em;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#section-form{
+  text-align: center;
+  color: #2a2a2a;
+  font-size: 1.4em;  
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#email{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.boton-negro{
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-color: transparent;
+}
+
+#section-boxes{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+#box-wrapper{
+  display: flex;
+  overflow: hidden;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.box{  
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 15px;  
+  border:  3px solid #fff;
+  border-radius: 1px;
+}
+
+.img-box img{
+  display: block; 
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+}
+
+.img-box img:hover{
+  border: 3px solid #fff;
+}
+
+#section-video h3{
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+#section-video{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-store-locator{
+  margin-top: 40px;
+  text-align: center;      
+  margin-bottom: 100px;
+}
+
+#section-store-locator p{
+  font-size: 1.4em;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+#section-store-locator a{
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+#footer{
+  border-top: 1px solid grey;
+}
+
+#lista-footer ol{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+}
+
+#lista-footer a{
+  color: #2a2a2a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#social-media-footer{
+  margin: 40px;
+  text-align: center;
+}
+
+#social-media-footer ol{
+  padding: 20px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+#social-media-footer li{
+  padding-right: 8px;
+}
+
+#social-media-footer img{
+  width: 32px;
+  height: 32px;
+}
+
+#copyRight{
+  text-align: center;
+  padding: 0px 30px 30px;
+  font-size: 0.9em;
+  color: #000;
+}
+
+
+@media screen and (max-width: 768px){
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.4s;
+  }
+  header #header-img{
+    padding-top: 10px;
+    width: 80%;    
+  }
+  #nav-bar ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+  }
+
+  #nav-bar li{
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-link{
+    font-size: 1em;
+  }
+  #box-wrapper{
+    display: flex;
+    flex-direction: column;  
+  }
+  .box{      
+    margin-right: 10%;
+    margin-left: 10%;    
+  }
+}
+
+
+@media (max-width: 640px){
+  #header-img{
+    padding-bottom: 10px;
+  }
+  header{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  #section-hero{
+    margin-top: 140px;
+  }
+  #section-hero-content h1{
+    font-size: 2em;  
+  }
+  #section-hero-content p{
+    font-size: 1.1em;
+    padding-bottom: 15px;
+  }
+  .link-section-hero{
+    font-size: 1rem;
+    margin: 10px;    
+  }  
+  
+  #section-video iframe{
+    width: 360px;
+    height: 215px;    
+  }   
+}
+
+@media (max-width: 420px){
+  #nav-bar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-link{    
+    padding-bottom: 5px;
+  }
+  
+  header{
+    padding-botom: 10px;    
+  }
+  #section-hero{
+    margin-top: 160px;
+    height: 250px;
+  }  
+  #section-hero-content h1{
+    font-size: 1.6em;  
+  }
+  #section-hero-content p{
+    font-size: 1em;
+    padding-bottom: 15px;
+  }
+  .link-section-hero{
+    font-size: 0.9rem;
+    margin: 5px;    
+  }
+  #section-form{
+    font-size: 1em;
+  }
+  #section-form h3{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  
+  #section-video iframe{
+    width: 260px;
+    height: 115px;    
+  }    
+  #section-store-locator p{
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 375px){
+  #section-store-locator{
+    margin-bottom: 50px;
+  }
+  #lista-footer{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: visible;
+  }
+  #lista-footer ol{
+    margin-top: 25px;    
+  }
+  #lista-footer a{
+    padding-right: 15px
+  }
+
+  #social-media-footer{
+    margin: 40px;
+    text-align: center;
+  }
+  #social-media-footer{
+    margin-top: 30px;    
+  }
+
+  #social-media-footer ol{
+    justify-content: space-around;
+  }
+
+  
+}
